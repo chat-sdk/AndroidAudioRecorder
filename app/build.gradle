@@ -1,12 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 31
     defaultConfig {
         applicationId "cafe.adriel.androidaudiorecorder.example"
-        minSdkVersion 15
-        targetSdkVersion 24
+        minSdkVersion 16
         versionCode 1
         versionName "1.0"
     }
@@ -16,11 +14,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile project(':lib')
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation project(':lib')
 //    compile 'com.github.adrielcafe:AndroidAudioRecorder:0.1.0'
 }
 
