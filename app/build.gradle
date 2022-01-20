@@ -22,8 +22,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation "androidx.appcompat:appcompat:$androidxAppcompatVersion"
+    implementation "com.google.android.material:material:$materialVersion"
     implementation project(':lib')
 //    compile 'com.github.adrielcafe:AndroidAudioRecorder:0.1.0'
 }

@@ -5,8 +5,6 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        versionCode 1
-        versionName "1.0"
     }
     buildTypes {
         release {
@@ -22,8 +20,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.2.1'
+
+//    api 'com.android.support:appcompat-v7:24.2.1'
 //    compile 'com.kailashdabhi:om-recorder:1.1.0'
-    compile 'com.github.kailash09dabhi:OmRecorder:1.1.0'
-    compile 'com.cleveroad:audiovisualization:1.0.0'
+    api "androidx.appcompat:appcompat:$androidxAppcompatVersion"
+    api 'com.github.kailash09dabhi:OmRecorder:1.1.0'
+    api 'com.cleveroad:audiovisualization:1.0.0'
 }
