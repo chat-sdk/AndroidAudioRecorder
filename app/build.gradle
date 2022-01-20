@@ -21,6 +21,7 @@ android {
 
 }
 
+
 dependencies {
     implementation "androidx.appcompat:appcompat:$androidxAppcompatVersion"
     implementation "com.google.android.material:material:$materialVersion"
@@ -28,6 +29,3 @@ dependencies {
 //    compile 'com.github.adrielcafe:AndroidAudioRecorder:0.1.0'
 }
 
-repositories {
-    maven { url "https://jitpack.io" }
-}
