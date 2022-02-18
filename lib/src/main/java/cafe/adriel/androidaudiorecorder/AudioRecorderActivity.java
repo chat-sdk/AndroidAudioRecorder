@@ -33,11 +33,9 @@ import cafe.adriel.androidaudiorecorder.model.AudioSource;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-import omrecorder.AudioChunk;
-import omrecorder.PullTransport;
 
 public class AudioRecorderActivity extends AppCompatActivity
-        implements PullTransport.OnAudioChunkPulledListener, MediaPlayer.OnCompletionListener {
+        implements MediaPlayer.OnCompletionListener {
 
     private String filePath;
     private AudioSource source;
@@ -204,11 +202,11 @@ public class AudioRecorderActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onAudioChunkPulled(AudioChunk audioChunk) {
-        float amplitude = isRecording ? (float) audioChunk.maxAmplitude() : 0f;
-        visualizerHandler.onDataReceived(amplitude);
-    }
+//    @Override
+//    public void onAudioChunkPulled(AudioChunk audioChunk) {
+//        float amplitude = isRecording ? (float) audioChunk.maxAmplitude() : 0f;
+//        visualizerHandler.onDataReceived(amplitude);
+//    }
 
     @Override
     public void onCompletion(MediaPlayer mediaPlayer) {

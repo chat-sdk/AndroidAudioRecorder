@@ -43,7 +43,7 @@ dependencies {
 //    api 'com.android.support:appcompat-v7:24.2.1'
 //    compile 'com.kailashdabhi:om-recorder:1.1.0'
     api "androidx.appcompat:appcompat:$androidxAppcompatVersion"
-    api 'com.github.kailash09dabhi:OmRecorder:1.1.0'
+//    api 'com.github.kailash09dabhi:OmRecorder:1.1.0'
     api 'com.cleveroad:audiovisualization:1.0.0'
 
     implementation 'com.github.piasy:rxandroidaudio:1.7.0'
