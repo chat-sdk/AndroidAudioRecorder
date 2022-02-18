@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16
@@ -45,4 +45,8 @@ dependencies {
     api "androidx.appcompat:appcompat:$androidxAppcompatVersion"
     api 'com.github.kailash09dabhi:OmRecorder:1.1.0'
     api 'com.cleveroad:audiovisualization:1.0.0'
+
+    implementation 'com.github.piasy:rxandroidaudio:1.7.0'
+    implementation 'com.github.piasy:AudioProcessor:1.7.0'
+
 }
